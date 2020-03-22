@@ -16,7 +16,7 @@ public class Issue101Frame extends JFrame {
             UIManager.setLookAndFeel(new mdlaf.MaterialLookAndFeel(new JMarsDarkTheme()));
             //UIManager.setLookAndFeel(new MetalLookAndFeel());
             //UIManager.setLookAndFeel(new NimbusLookAndFeel());
-            UIManager.put("Button.mouseHoverEnable", false); // Because the test are more difficulte with effect mouse
+            UIManager.put("Button.mouseHoverEnable", false); // Because the test are more difficult with effect mouse
             JDialog.setDefaultLookAndFeelDecorated(true);
             JFrame.setDefaultLookAndFeelDecorated(false); // not support yet
 
@@ -25,7 +25,7 @@ public class Issue101Frame extends JFrame {
         }
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Issue101Frame frame = new Issue101Frame();
 
         JPanel p = new JPanel(null);

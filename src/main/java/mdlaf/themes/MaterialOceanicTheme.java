@@ -161,7 +161,7 @@ public class MaterialOceanicTheme extends AbstractMaterialTheme{
         this.menuBackground = new ColorUIResource(31, 51, 71);
         this.menuBackgroundMouseHover = MaterialColors.DARKLY_BLUE;
         this.menuTextColor = MaterialColors.WHITE;
-        this.menuDisableBackground = MaterialColors.TRANSPANENT;
+        this.menuDisableBackground = MaterialColors.TRANSPARENT;
 
         this.arrowButtonColorScrollBar = MaterialColors.DARKLY_STRONG_BLUE;
         this.trackColorScrollBar = MaterialColors.DARKLY_BLUE;

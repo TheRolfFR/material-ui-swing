@@ -179,7 +179,7 @@ public class JMarsDarkTheme extends AbstractMaterialTheme {
         this.menuBackground = backgroundPrimary;
         this.menuBackgroundMouseHover = buttonBackgroundColorMouseHover;
         this.menuTextColor = MaterialColors.WHITE;
-        this.menuDisableBackground = MaterialColors.TRANSPANENT;
+        this.menuDisableBackground = MaterialColors.TRANSPARENT;
 
         this.arrowButtonColorScrollBar = buttonBackgroundColor;
         this.trackColorScrollBar = new ColorUIResource(81, 86, 101);

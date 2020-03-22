@@ -46,7 +46,7 @@ public class MaterialTableCellRenderer extends DefaultTableCellRenderer {
 			return renderer.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
 		}
 
-		//OLD version code restored for JMars offical version
+		//OLD version code restored for JMars official version
 		/*
 		boolean alternativeRow = UIManager.getBoolean("Table.alternateRowColor");
 		Color alternateRowColor = UIManager.getColor("Table.alternateRowBackground");

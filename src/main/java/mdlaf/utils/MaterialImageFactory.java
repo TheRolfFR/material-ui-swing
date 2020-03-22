@@ -57,7 +57,7 @@ public class MaterialImageFactory{
 
     private static MaterialImageFactory SINGLETON;
 
-    private static final String PATH_RESOUSES = "/imgs/";
+    private static final String PATH_RESOURCES = "/imgs/";
 
     //Icon black
     public static final String RIGHT_ARROW = "right_arrow";
@@ -156,7 +156,7 @@ public class MaterialImageFactory{
         if(iconCode == null || dimension <= 0){
             String errorMessage = "Don't know motivation this exceptions";
             if(iconCode == null){
-                if(errorMessage.contains("Don\'t know motivation this exceptions")){
+                if(errorMessage.contains("Don't know motivation this exceptions")){
                     errorMessage = "";
                 }
                 errorMessage += "\n- Icon code null, you can found the name icon color here: " +
@@ -166,7 +166,7 @@ public class MaterialImageFactory{
                         "GoogleMaterialDesignIcons.KEYBOARD_ARROW_RIGHT, Color.BLUE);";
             }
             if(dimension <= 0){
-                if(errorMessage.contains("Don\'t know motivation this exceptions")){
+                if(errorMessage.contains("Don't know motivation this exceptions")){
                     errorMessage = "";
                 }
                 errorMessage += "\n- Dimension of icon doesn't valid, you should insert the dimension > 0";

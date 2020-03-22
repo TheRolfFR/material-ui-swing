@@ -24,7 +24,6 @@
 
 import mdlaf.MaterialLookAndFeel;
 import mdlaf.animation.MaterialUIMovement;
-import mdlaf.components.button.MaterialButtonUI;
 import mdlaf.themes.JMarsDarkTheme;
 import mdlaf.themes.MaterialLiteTheme;
 import mdlaf.themes.MaterialOceanicTheme;
@@ -193,7 +192,7 @@ public class MaterialUISwingDemo {
                     abiliteButton.setAction(new ActionEnableButton(button));
                     abiliteButton.setBackground(MaterialColors.COSMO_BLUE);
                     abiliteButton.setForeground(MaterialColors.WHITE);
-                    abiliteButton.addMouseListener(MaterialUIMovement.getMovement(abiliteButton, MaterialColors.COSMO_LIGTH_BLUE));
+                    abiliteButton.addMouseListener(MaterialUIMovement.getMovement(abiliteButton, MaterialColors.COSMO_LIGHT_BLUE));
                     content.add(abiliteButton);
 
                     //Test a MaterialTitleBorder
@@ -321,10 +320,10 @@ public class MaterialUISwingDemo {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             JOptionPane pane = new JOptionPane();
-                            String message = "The componet toast is removed into project \n " +
+                            String message = "The component toast is removed into project \n " +
                                     "Because it carried unnecessary dependencies, but you can find the component here\n" +
                                     "https://github.com/vincenzopalazzo/toasts-for-swing";
-                            pane.showMessageDialog(frame, message, "Info on Toast", JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(frame, message, "Info on Toast", JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
                     buttonTwoo.setAction(new ActionToastTest(pn));
@@ -337,12 +336,12 @@ public class MaterialUISwingDemo {
                     bottoneConImmagine.setIcon(MaterialImageFactory.getInstance().getImage(MaterialImageFactory.COMPUTER_BLACK));
                     pn.add(bottoneConImmagine);
 
-                    JButton buttonTestTextFieled = new JButton("Test JtexFiele");
+                    JButton buttonTestTextFieled = new JButton("Test JTextField");
 
                     class AzioneTestJTexField extends AbstractAction {
 
                         public AzioneTestJTexField() {
-                            putValue(Action.NAME, "testJtextFieled");
+                            putValue(Action.NAME, "testJTextField");
                         }
 
                         @Override
@@ -363,9 +362,9 @@ public class MaterialUISwingDemo {
                     JXTaskPane jxTaskPane = new JXTaskPane();
                     jxTaskPane.setTitle("Material UI memory");
                     jxTaskPane.setOpaque(false);
-                    JLabel memoryOccupedNow = new JLabel();
+                    JLabel memoryOccupiedNow = new JLabel();
 
-                    jxTaskPane.add(memoryOccupedNow);
+                    jxTaskPane.add(memoryOccupiedNow);
 
                     //Test effect mouse over
                     //Setting default
@@ -402,7 +401,7 @@ public class MaterialUISwingDemo {
 
                     JButton buttonInfo = new JButton("Test INFO");
                     buttonInfo.setBackground(MaterialColors.COSMO_GREEN);
-                    buttonInfo.setForeground(MaterialColors.COSMO_LIGTH_GRAY);
+                    buttonInfo.setForeground(MaterialColors.COSMO_LIGHT_GRAY);
                     buttonInfo.addMouseListener(MaterialUIMovement.getMovement(buttonInfo, MaterialColors.COSMO_LIGHT_GREEN));
                     class InfoMessage extends AbstractAction {
 
@@ -413,7 +412,7 @@ public class MaterialUISwingDemo {
                         @Override
                         public void actionPerformed(ActionEvent e) {
                             JOptionPane optionPane = new JOptionPane();
-                            optionPane.showMessageDialog(frame, "This is message info", "Message info", JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(frame, "This is message info", "Message info", JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
 
@@ -423,7 +422,7 @@ public class MaterialUISwingDemo {
 
                     JButton buttonError = new JButton();
                     buttonError.setBackground(MaterialColors.COSMO_RED);
-                    buttonError.setForeground(MaterialColors.COSMO_LIGTH_GRAY);
+                    buttonError.setForeground(MaterialColors.COSMO_LIGHT_GRAY);
                     buttonError.addMouseListener(MaterialUIMovement.getMovement(buttonError, MaterialColors.COSMO_LIGHT_RED));
                     class ErrorMassage extends AbstractAction {
 
@@ -435,7 +434,7 @@ public class MaterialUISwingDemo {
                         public void actionPerformed(ActionEvent e) {
 
                             JOptionPane optionPane = new JOptionPane();
-                            optionPane.showMessageDialog(frame, "This is message error", "Message error", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(frame, "This is message error", "Message error", JOptionPane.ERROR_MESSAGE);
                         }
                     }
                     buttonError.setAction(new ErrorMassage());
@@ -444,11 +443,11 @@ public class MaterialUISwingDemo {
 
                     JButton buttonQuestion = new JButton();
                     buttonQuestion.setBackground(MaterialColors.COSMO_BLUE);
-                    buttonQuestion.setForeground(MaterialColors.COSMO_LIGTH_GRAY);
-                    buttonQuestion.addMouseListener(MaterialUIMovement.getMovement(buttonQuestion, MaterialColors.COSMO_LIGTH_BLUE));
-                    class QuesuionMessage extends AbstractAction {
+                    buttonQuestion.setForeground(MaterialColors.COSMO_LIGHT_GRAY);
+                    buttonQuestion.addMouseListener(MaterialUIMovement.getMovement(buttonQuestion, MaterialColors.COSMO_LIGHT_BLUE));
+                    class QuestionMessage extends AbstractAction {
 
-                        public QuesuionMessage() {
+                        public QuestionMessage() {
                             putValue(Action.NAME, "Info question panel");
                         }
 
@@ -456,17 +455,17 @@ public class MaterialUISwingDemo {
                         public void actionPerformed(ActionEvent e) {
 
                             JOptionPane optionPane = new JOptionPane();
-                            optionPane.showMessageDialog(frame, "This is message question", "Message question", JOptionPane.QUESTION_MESSAGE);
+                            JOptionPane.showMessageDialog(frame, "This is message question", "Message question", JOptionPane.QUESTION_MESSAGE);
                         }
                     }
 
-                    buttonQuestion.setAction(new QuesuionMessage());
+                    buttonQuestion.setAction(new QuestionMessage());
 
                     frame.getRootPane().setDefaultButton(buttonQuestion);
 
                     JButton buttonWarning = new JButton();
                     buttonWarning.setOpaque(false);
-                    buttonWarning.setForeground(MaterialColors.COSMO_LIGTH_GRAY);
+                    buttonWarning.setForeground(MaterialColors.COSMO_LIGHT_GRAY);
                     buttonWarning.setBackground(MaterialColors.COSMO_ORANGE);
                     buttonWarning.addMouseListener(MaterialUIMovement.getMovement(buttonWarning, MaterialColors.COSMO_LIGHT_ORANGE));
                     class WarningMessage extends AbstractAction {
@@ -479,7 +478,7 @@ public class MaterialUISwingDemo {
                         public void actionPerformed(ActionEvent e) {
 
                             JOptionPane optionPane = new JOptionPane();
-                            optionPane.showMessageDialog(frame, "This is message warning", "Message warning", JOptionPane.WARNING_MESSAGE);
+                            JOptionPane.showMessageDialog(frame, "This is message warning", "Message warning", JOptionPane.WARNING_MESSAGE);
                         }
 
                     }
@@ -506,14 +505,14 @@ public class MaterialUISwingDemo {
                     JPanel panel4 = new JPanel();
 
                     //String array to store weekdays
-                    String week[] = {"Monday", "Tuesday", "Wednesday",
+                    String[] week = {"Monday", "Tuesday", "Wednesday",
                             "Thursday", "Friday", "Saturday", "Sunday"};
                     JList<String> listDay = new JList<>(week);
 
-                    JButton buttonOptionPane = new JButton("Click for open JOptionpane");
+                    JButton buttonOptionPane = new JButton("Click for open JOptionPane");
                     class OpenOptionPane extends AbstractAction {
                         public OpenOptionPane() {
-                            putValue(Action.NAME, "Click me for open JOptionpane");
+                            putValue(Action.NAME, "Click me for open JOptionPane");
                         }
 
                         @Override
@@ -533,9 +532,9 @@ public class MaterialUISwingDemo {
                     panel4.add(labelDisable);
                     labelDisable.setEnabled(false);
 
-                    JButton buttonEnableLabel = new JButton("Enable lable");
+                    JButton buttonEnableLabel = new JButton("Enable label");
                     buttonEnableLabel.setBackground(MaterialColors.COSMO_BLACK);
-                    buttonEnableLabel.setForeground(MaterialColors.COSMO_LIGTH_GRAY);
+                    buttonEnableLabel.setForeground(MaterialColors.COSMO_LIGHT_GRAY);
 
                     MaterialManagerListener.removeAllMaterialMouseListener(buttonEnableLabel);
                     buttonEnableLabel.addMouseListener(MaterialUIMovement.getMovement(buttonEnableLabel, MaterialColors.COSMO_DARK_GRAY));
@@ -584,8 +583,8 @@ public class MaterialUISwingDemo {
                     frame.setLocationRelativeTo(null);
 
                     long lastUsedMem = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-                    double megamemori = (lastUsedMem - beforeUsedMem) * 9.537 * Math.pow(10, -7);
-                    memoryOccupedNow.setText("Memory occuped after update: " + megamemori + " MB");
+                    double megaMemory = (lastUsedMem - beforeUsedMem) * 9.537 * Math.pow(10, -7);
+                    memoryOccupiedNow.setText("Memory occupied after update: " + megaMemory + " MB");
 
                     //For testing
                     //SwingUtilities.updateComponentTreeUI(frame);

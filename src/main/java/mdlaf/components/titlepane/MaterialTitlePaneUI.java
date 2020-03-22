@@ -463,7 +463,7 @@ public class MaterialTitlePaneUI extends JComponent {
         boolean leftToRight = (window == null) ?
                 rootPane.getComponentOrientation().isLeftToRight() :
                 window.getComponentOrientation().isLeftToRight();
-        boolean isSelected = (window == null) ? true : window.isActive();
+        boolean isSelected = (window == null) || window.isActive();
         int width = getWidth();
         int height = getHeight();
 

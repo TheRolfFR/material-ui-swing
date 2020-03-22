@@ -116,7 +116,7 @@ public class MaterialLiteTheme extends AbstractMaterialTheme {
         this.textColor = MaterialColors.BLACK;
         this.disableTextColor = MaterialColors.GRAY_500;
 
-        this.buttonBackgroundColor = MaterialColors.COSMO_LIGTH_GRAY;
+        this.buttonBackgroundColor = MaterialColors.COSMO_LIGHT_GRAY;
         this.buttonBackgroundColorMouseHover = MaterialColors.COSMO_DARK_GRAY;
         this.buttonTextColor = MaterialColors.BLACK;
         this.buttonDefaultBackgroundColorMouseHover = MaterialColors.LIGHT_BLUE_200;
@@ -129,13 +129,13 @@ public class MaterialLiteTheme extends AbstractMaterialTheme {
         this.buttonBorderColor = MaterialColors.COSMO_MEDIUM_GRAY;
         this.buttonColorHighlight = MaterialColors.GRAY_400;
 
-        this.selectedInDropDownBackgroundComboBox = MaterialColors.COSMO_LIGTH_BLUE;
+        this.selectedInDropDownBackgroundComboBox = MaterialColors.COSMO_LIGHT_BLUE;
         this.selectedForegroundComboBox = MaterialColors.BLACK;
 
         this.menuBackground = MaterialColors.WHITE;
         this.menuBackgroundMouseHover = MaterialColors.GRAY_400;
         this.menuTextColor = MaterialColors.BLACK;
-        this.menuDisableBackground = MaterialColors.TRANSPANENT;
+        this.menuDisableBackground = MaterialColors.TRANSPARENT;
 
         this.arrowButtonColorScrollBar = MaterialColors.GRAY_200;
         this.trackColorScrollBar = MaterialColors.GRAY_200;
@@ -158,7 +158,7 @@ public class MaterialLiteTheme extends AbstractMaterialTheme {
         this.backgroundTableHeader = MaterialColors.GRAY_200;
         this.foregroundTable = MaterialColors.BLACK;
         this.foregroundTableHeader = MaterialColors.BLACK;
-        this.selectionBackgroundTable = MaterialColors.COSMO_LIGTH_BLUE;
+        this.selectionBackgroundTable = MaterialColors.COSMO_LIGHT_BLUE;
         this.selectionForegroundTable = MaterialColors.BLACK;
         this.gridColorTable = MaterialColors.GRAY_200;
         this.alternateRowBackgroundTable = MaterialColors.GRAY_300;
@@ -190,10 +190,10 @@ public class MaterialLiteTheme extends AbstractMaterialTheme {
         this.borderColorTaskPane = MaterialColors.WHITE;
         this.contentBackgroundTaskPane = MaterialColors.WHITE;
 
-        this.selectionBackgroundList = MaterialColors.COSMO_LIGTH_BLUE;
+        this.selectionBackgroundList = MaterialColors.COSMO_LIGHT_BLUE;
         this.selectionForegroundList = MaterialColors.BLACK;
 
-        this.backgroundProgressBar = MaterialColors.COSMO_LIGTH_BLUE;
+        this.backgroundProgressBar = MaterialColors.COSMO_LIGHT_BLUE;
         this.foregroundProgressBar = MaterialColors.COSMO_BLUE;
 
         this.withoutIconSelectedBackgroundToggleButton = MaterialColors.COSMO_DARK_GRAY;

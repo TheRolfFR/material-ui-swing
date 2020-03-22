@@ -289,14 +289,14 @@ public class MaterialColors {
 	public static final ColorUIResource BLUE_GRAY_900 = new ColorUIResource (38, 50, 56);
 	public static final ColorUIResource BLACK = new ColorUIResource (0, 0, 0);
 	public static final ColorUIResource WHITE = new ColorUIResource (255, 255, 255);
-	public static final ColorUIResource TRANSPANENT = new ColorUIResource(new Color(0, 0, 0, 100));
+	public static final ColorUIResource TRANSPARENT = new ColorUIResource(new Color(0, 0, 0, 100));
 
 	//Cosmo ColorUIResource
 	public static final ColorUIResource DARKLY_STRONG_BLUE = new ColorUIResource(40, 65, 91);
 	public static final ColorUIResource DARKLY_BLUE = new ColorUIResource(55, 90, 127);
 	public static final ColorUIResource COSMO_STRONG_BLUE = new ColorUIResource(25, 103, 190);
 	public static final ColorUIResource COSMO_BLUE = new ColorUIResource(39, 128, 227);
-	public static final ColorUIResource COSMO_LIGTH_BLUE = new ColorUIResource(195, 219, 247);
+	public static final ColorUIResource COSMO_LIGHT_BLUE = new ColorUIResource(195, 219, 247);
 	public static final ColorUIResource DARKLY_RED = new ColorUIResource(231, 76, 60);
 	public static final ColorUIResource COSMO_RED = new ColorUIResource(255, 0, 57);
 	public static final ColorUIResource COSMO_LIGHT_RED = new ColorUIResource(255, 184, 200);
@@ -309,7 +309,7 @@ public class MaterialColors {
 	public static final ColorUIResource DARKLY_GREEN = new ColorUIResource(0, 188, 140);
 	public static final ColorUIResource COSMO_GREEN = new ColorUIResource(61, 176, 23);
 	public static final ColorUIResource COSMO_LIGHT_GREEN = new ColorUIResource(201, 235, 190);
-	public static final ColorUIResource COSMO_LIGTH_GRAY = new ColorUIResource(248, 249, 250);
+	public static final ColorUIResource COSMO_LIGHT_GRAY = new ColorUIResource(248, 249, 250);
 	public static final ColorUIResource COSMO_MEDIUM_GRAY = new ColorUIResource(218, 218, 218);
 	public static final ColorUIResource COSMO_STRONG_GRAY = new ColorUIResource(199, 200, 200);
 	public static final ColorUIResource COSMO_DARK_GRAY = new ColorUIResource(199, 200, 200);

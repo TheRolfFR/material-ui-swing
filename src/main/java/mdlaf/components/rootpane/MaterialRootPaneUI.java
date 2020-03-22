@@ -29,7 +29,6 @@ import javax.swing.*;
 import javax.swing.event.MouseInputListener;
 import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.basic.BasicRootPaneUI;
-import javax.swing.plaf.metal.MetalRootPaneUI;
 import java.awt.*;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseEvent;
@@ -178,7 +177,7 @@ public class MaterialRootPaneUI extends BasicRootPaneUI {
     }
 
     protected LayoutManager createLayoutManager() {
-        return new MaterialLayaut();
+        return new MaterialLayout();
 
     }
 
@@ -236,7 +235,7 @@ public class MaterialRootPaneUI extends BasicRootPaneUI {
         return;
     }
 
-    protected static class MaterialLayaut implements LayoutManager2 {
+    protected static class MaterialLayout implements LayoutManager2 {
 
         public Dimension preferredLayoutSize(Container parent) {
             Dimension cpd, mbd, tpd;

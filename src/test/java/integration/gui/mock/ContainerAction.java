@@ -91,14 +91,14 @@ public class ContainerAction {
     private class ActionListenerTextField implements ActionListener {
 
         private String textOne = "Hello this is an test with AssertJ";
-        private String textTwoo = "Hello this is Material-UI-Swing look and feel";
+        private String textTwo = "Hello this is Material-UI-Swing look and feel";
 
         @Override
         public void actionPerformed(ActionEvent e) {
             JTextField textField = (JTextField) e.getSource();
-            String attualText = textField.getText();
-            if (attualText.contains(textOne)) {
-                textField.setText(textTwoo);
+            String actualText = textField.getText();
+            if (actualText.contains(textOne)) {
+                textField.setText(textTwo);
             } else {
                 textField.setText(textOne);
             }

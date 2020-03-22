@@ -30,7 +30,7 @@ import java.awt.event.MouseListener;
 
 /**
  * This class recreate a effect mouse hover static,
- * This component not implement a wake effect, and is util in all component for click, an example: The button for JSpinner, JCombobox, JScroolbar
+ * This component not implement a wake effect, and is util in all component for click, an example: The button for JSpinner, JCombobox, JScrollbar
  * @author https://github.com/vincenzopalazzo
  */
 class MaterialUIStaticMovement implements MouseListener {
@@ -89,7 +89,7 @@ class MaterialUIStaticMovement implements MouseListener {
     }
 
     /***
-     * This is service method for recicle code
+     * This is service method for recycle code
      */
     private void setColorComponent(MouseEvent e, Color colorComponent){
         if(e == null || colorComponent == null){

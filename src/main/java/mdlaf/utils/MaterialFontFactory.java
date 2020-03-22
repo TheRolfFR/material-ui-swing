@@ -81,7 +81,7 @@ public class MaterialFontFactory {
 
     private MaterialFontFactory() {
         try {
-            loadOsPropries();
+            loadOsProperties();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -94,7 +94,7 @@ public class MaterialFontFactory {
      * Many dependencies, native fonts are removed from the project but this method remains for furious purposes
      * @throws IOException
      */
-    private void loadOsPropries() throws IOException {
+    private void loadOsProperties() throws IOException {
         properties.load(getClass().getResourceAsStream("/config/font-all-language.properties"));
     }
 
@@ -105,8 +105,8 @@ public class MaterialFontFactory {
         if(cacheFont.containsKey(typeFont)){
             return new FontUIResource(cacheFont.get(typeFont));
         }
-        String propieties = properties.getProperty(typeFont);
-        Font font = loadFont(propieties);
+        String properties = this.properties.getProperty(typeFont);
+        Font font = loadFont(properties);
         cacheFont.put(typeFont, font);
         return new FontUIResource(cacheFont.get(typeFont));
     }

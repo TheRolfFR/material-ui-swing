@@ -50,7 +50,7 @@ public class DemoGUITest extends JFrame {
         try {
             UIManager.setLookAndFeel(new MaterialLookAndFeel(new JMarsDarkTheme()));
 
-            UIManager.put("Button.mouseHoverEnable", false); //Because the test are more difficulte with effect mouse hover
+            UIManager.put("Button.mouseHoverEnable", false); //Because the test are more difficult with effect mouse hover
             JDialog.setDefaultLookAndFeelDecorated(true);
             JFrame.setDefaultLookAndFeelDecorated(false); //not support yet
         } catch (UnsupportedLookAndFeelException e) {
@@ -364,7 +364,7 @@ public class DemoGUITest extends JFrame {
         layoutPanelOne.setAutoCreateGaps(true);
         layoutPanelOne.setAutoCreateContainerGaps(true);
 
-        //Init position component with group layaut
+        //Init position component with group layout
         layoutPanelOne.setHorizontalGroup(
                 layoutPanelOne.createParallelGroup(GroupLayout.Alignment.CENTER)
                         .addComponent(textFieldUsername)

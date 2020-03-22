@@ -38,7 +38,7 @@ public class TableModelSecondPanel extends AbstractTableModel {
 
     private String[] columnNames = { "First Name", "Last Name", "Sport",
             "# of Years", "Vegetarian" };
-    private List<String> columNameStringList = new ArrayList<>(Arrays.asList(columnNames));
+    private List<String> columnNameStringList = new ArrayList<>(Arrays.asList(columnNames));
     private Object[][] data = {
             { "Mary", "Campione", "Snowboarding", new Integer(5),
                     new Boolean(false) },
@@ -59,7 +59,7 @@ public class TableModelSecondPanel extends AbstractTableModel {
     }
 
     public String getColumnName(int col) {
-        return columNameStringList.get(col);
+        return columnNameStringList.get(col);
     }
 
     public Object getValueAt(int row, int col) {

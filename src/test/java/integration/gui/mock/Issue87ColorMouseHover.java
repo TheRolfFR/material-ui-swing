@@ -49,7 +49,7 @@ public class Issue87ColorMouseHover extends JDialog {
             JButton jButton1 = new javax.swing.JButton();
             jButton1.setBorder(BorderFactory.createLineBorder(new ColorUIResource(45, 48, 56)));
             jButton1.setBackground(new ColorUIResource(45, 48, 56));
-            jButton1.setForeground(MaterialColors.COSMO_LIGTH_GRAY);
+            jButton1.setForeground(MaterialColors.COSMO_LIGHT_GRAY);
             jButton1.addMouseListener(MaterialUIMovement.getMovement(jButton1, new ColorUIResource(23, 137, 134)));
             jButton1.setText("Test Button");
             jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -85,7 +85,7 @@ public class Issue87ColorMouseHover extends JDialog {
         /**
          * @param args the command line arguments
          */
-        public static void main(String args[]) {
+        public static void main(String[] args) {
             try {
                 MaterialLookAndFeel material = new MaterialLookAndFeel(new MaterialLiteTheme());
                 UIManager.setLookAndFeel(material);

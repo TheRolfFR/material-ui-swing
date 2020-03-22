@@ -79,7 +79,7 @@ public class MaterialInternalFrameTitlePane extends BasicInternalFrameTitlePane 
         MaterialManagerListener.removeAllMaterialMouseListener(maxButton);
         maxButton.setBorder(null);
         maxButton.setOpaque(false);
-        maxButton.addMouseListener(MaterialUIMovement.getMovement(closeButton, MaterialColors.COSMO_LIGTH_BLUE));
+        maxButton.addMouseListener(MaterialUIMovement.getMovement(closeButton, MaterialColors.COSMO_LIGHT_BLUE));
 
         MaterialManagerListener.removeAllMaterialMouseListener(iconButton);
         iconButton.setBorder(null);

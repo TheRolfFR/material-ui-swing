@@ -96,7 +96,7 @@ public class TitledBorderMaterialStyle extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox3ActionPerformed
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
